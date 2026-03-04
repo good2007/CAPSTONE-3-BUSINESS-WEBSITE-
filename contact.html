@@ -1,116 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>CONTACT US ON</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <!--Links-->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
-<body style="background-image: url(images/yangu.webp);">
-
-    <nav style="background-color: aqua;">
-        <h1>
-            <center>NEED MORE INFO???</center>
-        </h1>
-        <img style="width: 150px; height: 150px; border-radius: 50%;" src="images/hoslogo.webp" alt="Profile Picture">
+<body class="contact-body">
+    <nav>
         <ul>
-            <li><a href="Leadership.html">Leadership</a></li>
-            <li><a href="infrastructure.html">Overview</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="index.html">Home </a></li>
-            <li><a href="about.html">About </a></li>
-            <li><a href="contact.html">Contact </a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="infrastructure.html">Infrastructure</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
         </ul>
     </nav>
 
-        <section>
-        <header>
+    <section class="section-body">
+        <h1 class="contact-title">Contact Us</h1>
+        <p>We’d love to hear from you! Whether you have questions, feedback, or need more information, fill out the form below and our team will respond promptly. You can also reach us directly via phone, email, or social media listed on this page.</p>
 
-            <h1>TELEPHONE</h1>
-        </header>
+        <div class="contact-info">
+            <!-- Contact form -->
+            <div class="contact-form">
+                <form action="submit_contact.php" method="POST">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of Your Message" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact details -->
+            <div class="contact-details">
+                <h2>Reach Out</h2>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="phone-numbers">
+                        <span>+254700006118</span><br>
+                        <span>+254726299532</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>royalhospital@gmail.com</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>@royalhospital</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>@royalhospital</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>@royalhospital</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!--=pictorials section-->
-    <main class="grid">
-        <section class="card">
-            <h2>SAFARICOM</h2>
-            <img style="width: 250px; height: 250px; border-radius: 180px;" src="images/safaric0m.webp"
-                alt="Our scouts party">
-                <h1>+254700006118<br>+254726229532</h1>
-        </section>
-        <section class="card">
-            <h2> AIRTEL</h2>
-            <img style="width: 250px; height: 250px; border-radius: 180px;" src="images/cathy.webp"
-                alt="Sarit Expo for Teens in Tech"></p>
-                <h1>+254798764309<br>+254776543218</h1>
-                    </section>
-        <section class="card">
-            <h2>TELCOM</h2>
-            <img style="width: 250px; height: 250px; border-radius: 180px;" src="images/dugu1.webp"
-                alt="Our scouts party">
-                <h1>+254854937542<br>+254376542984n</h1>
-            </section>
-
-    </main>
-    <section>
-        <header>
-
-            <h1>SOCIAL MEDIA ACCOUNTS</h1>
-        </header>
-    </section>
-
-    <main class="grid">
-
-        <!--== CEO ==-->
-        <section class="card">
-            <h2>FACEBOOK</h2>
-            <img style="width: 250px; height: 250px; border-radius: 180px;" src="images/ceo1.jpg"
-                alt="Starehe Boys' Centre">
-            <h2 style="color: blueviolet;"> @royalhospital</h1>
-        </section>
-
-        <!--== Professional Experience section ==-->
-        <section class="card">
-            <h2>INSTAGRAM</h2>
-            <img style="width: 250px; height: 250px; border-radius: 180px;" src="images/instagram.webp"
-                alt="Form 4 Prayer Day 2025 at Starehe">
-            <H2>@royalhospital</H2>
-        </section>
-
-        <!--== pictorials==-->
-        <section class="card">
-            <h2>TWITTER</h2>
-            <img style="width: 250px; height: 250px; border-radius: 180px;" src="images/irene.jpg" alt="">
-            <h2>@royalhospital</h2>
-        </section>
-    </Main>
-    
-    <!--=pictorials section-->
-    <main class="grid">
-        <section class="card">
-            <h2> TIKTOK</h2>
-            <img style="width: 250px; height: 250px; border-radius: 180px;" src="images/mwaura.webp"
-                alt="Sarit Expo for Teens in Tech"></p>
-            <h2>@royalhospital</h2>
-        </section>
-
-        <section class="card">
-            <h2>E-MAIL</h2>
-            <img style="width: 250px; height: 250px; border-radius: 180px;" src="images/rachael.webp" alt="">
-            <h2>royalhospital@gmail.com</h2>
-        </section>
-
-        <!--=pictorials section-->
-        <section class="card">
-            <h2>LINKEDIN</h2>
-            <img style="width: 250px; height: 250px; border-radius: 180px;" src="images/nekesa.jpg"
-                alt="Our scouts party">
-            <H2>@royalhospital</H2>
-        </section>
-    </main>
-
-    <footer style="background-image: url(images/footer.webp);">
-        <p>© Mama Judy RoyalHospital, Nairobi</p>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Royal Hospital. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://facebook.com/royalhospital" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/royalhospital" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/royalhospital" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 
